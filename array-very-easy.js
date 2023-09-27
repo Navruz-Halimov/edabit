@@ -68,3 +68,25 @@
 // 3.function drop(arr,val=1){
 //     return arr.filter((el,index)=>index>=val)
 // }
+
+
+
+// ###########4problem###########
+// Upvotes vs Downvotes
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+
+// Examples
+// getVoteCount({ upvotes: 13, downvotes: 0 }) ➞ 13
+
+// getVoteCount({ upvotes: 2, downvotes: 33 }) ➞ -31
+
+// getVoteCount({ upvotes: 132, downvotes: 132 }) ➞ 0
+
+
+// solution
+// 1. function getVoteCount(votes) {
+// 	return votes.upvotes + votes.downvotes
+// }
+
+// 2. const getVoteCount=(votes)=>votes.upvotes + votes.downvotes
+// 3. const getVoteCount = ({ upvotes, downvotes }) => upvotes - downvotes;
