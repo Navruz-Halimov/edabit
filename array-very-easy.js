@@ -178,3 +178,26 @@
 // 2. const getLastItem=arr=>arr.pop()
 // 3. const getLastItem=arr=>arr[arr.length-1]
 // 4. const getLastItem=arr=>arr.slice(-1)[0]
+
+
+// ############## 9 problem##################
+// Convert an Array to a String
+// Create a function that takes an array of numbers or letters and returns a string.
+
+// Examples
+// arrayToString([1, 2, 3, 4, 5, 6]) ➞ "123456"
+
+// arrayToString(["a", "b", "c", "d", "e", "f"]) ➞ "abcdef"
+
+// arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
+
+// solution
+// 1. function arrayToString(arr) {
+// 	return arr.join('')
+// }
+// 2. const arrayToString=arr=>arr.join()
+// 3. function arrayToString(arr){
+//     let result=''
+//      arr.forEach(element =>result+=element);
+//      return result
+// }
