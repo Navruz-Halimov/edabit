@@ -227,3 +227,35 @@
 // 	}	
 // 	return arr1
 // }
+
+
+// ##################problem 11#################
+// Find the Index
+// Create a function that takes an array and a string as arguments and returns the index of the string.
+
+// Examples
+// findIndex(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
+
+// findIndex(["Red", "blue", "Blue", "Green"], "blue") ➞ 1
+
+// findIndex(["a", "g", "y", "d"], "d") ➞ 3
+
+// findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple") ➞ 0
+
+// solution
+
+// 1. function findIndex(arr, str) {
+// 	return arr.indexOf(str)
+// }
+// 2. function findIndex(arr, str) {
+// 	return arr.findIndex(el=>el===str)
+// }
+// 3. const findIndex=(arr,str)=>arr.indexOf(str)
+// 4. const findInde=(arr,str)=>arr.findIndex(el=>el===str)
+// 5. function findIndex(arr, str) {
+//     for(let i=0; i<arr.length;i++){
+//     if(arr[i]==str){
+//         return i
+//     }
+// }
+// }
