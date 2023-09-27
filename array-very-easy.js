@@ -39,3 +39,32 @@
 // 2. const makePair=(num1,num2)=>[num1,num2]
 
 // 3. const makePair=(num1,num2)=> [...arguments]
+
+
+
+// ######3 problem############
+
+// Learn Lodash: _.drop, Drop the First Elements of an Array
+// According to the lodash documentation, _.drop creates a slice of an array with n elements dropped from the beginning.
+
+// Your challenge is to write your own version using vanilla JavaScript.
+
+// Examples
+// drop([1, 2, 3], 1) ➞ [2, 3]
+
+// drop([1, 2, 3], 2) ➞ [3]
+
+// drop([1, 2, 3], 5) ➞ []
+
+// drop([1, 2, 3], 0) ➞ [1, 2, 3]
+
+
+// solution
+// 1. function drop(arr, val = 1) {
+// 	return arr.slice(val)
+// }
+// 2. const  drop=(arr,val=1)=>arr.slice(val)
+
+// 3.function drop(arr,val=1){
+//     return arr.filter((el,index)=>index>=val)
+// }
