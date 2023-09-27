@@ -159,3 +159,22 @@
 // solution
 // const [a, b] = arr;
 
+// ########### 8 problem############
+// Return the Last Element in an Array
+// Create a function that accepts an array and returns the last item in the array.
+
+// Examples
+// getLastItem([1, 2, 3]) ➞ 3
+
+// getLastItem(["cat", "dog", "duck"]) ➞ "duck"
+
+// getLastItem([true, false, true]) ➞ true
+
+
+// solution
+// 1. function getLastItem(arr) {
+// 	return arr.pop()
+// }
+// 2. const getLastItem=arr=>arr.pop()
+// 3. const getLastItem=arr=>arr[arr.length-1]
+// 4. const getLastItem=arr=>arr.slice(-1)[0]
