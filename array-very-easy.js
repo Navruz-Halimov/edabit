@@ -464,3 +464,41 @@
 // 	return { "Needs": ati*0.5, "Wants": ati*0.3, "Savings": ati*0.2 }
 // }
 // 2. const fiftyThirtyTwenty = a => a = {Needs:a/2, Wants:a*.3, Savings:a*.2};
+
+// ################# 19 problem #####################
+// Similar Bread
+// Given two arrays, which represent two sandwiches, return whether both sandwiches use the same type of bread. The bread will always be found at the start and end of the array.
+
+// Examples
+// hasSameBread(
+//   ["white bread", "lettuce", "white bread"],
+//   ["white bread", "tomato", "white bread"]
+// ) ➞ true
+
+// hasSameBread(
+//   ["brown bread", "chicken", "brown bread"],
+//   ["white bread", "chicken", "white bread"]
+// ) ➞ false
+
+// hasSameBread(
+//   ["toast", "cheese", "toast"],
+//   ["brown bread", "cheese", "toast"]
+// ) ➞ false
+
+// solution
+// 1. function hasSameBread(arr1, arr2) {
+// 	return arr1[0]==arr2[0] && arr1[arr1.length-1]==arr2[arr2.length-1]
+// }
+// 2. const hasSameBread=(arr1,arr2)=> arr1[0]==arr2[0] && arr1[arr1.length-1]==arr2[arr2.length-1]
+// 3. function hasSameBread(arr1, arr2) {
+// 	return arr1.shift() === arr2.shift() && arr1.pop() === arr2.pop();
+// }
+// 4. const hasSameBread = (arr1, arr2) => {
+// 	const [a, b, c] = arr1
+// 	const [x, y, z] = arr2
+// 	return a==x && c ==z
+// }
+// 5. function hasSameBread(arr1, arr2) {
+// 	return arr1.includes(arr2[0]) && arr1.pop()===arr2[arr2.length-1]
+// }
+// 6. const hasSameBread=(arr1,arr2)=>arr1.includes(arr2[0]) && arr1.pop()===arr2[arr2.length-1]
