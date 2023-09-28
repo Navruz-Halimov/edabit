@@ -285,3 +285,4 @@
 //  6. function valueAt(arr,i) {
 //     return arr.filter((el,index)=>index==(Math.floor(i)))[0]
 //  }
+// 7. const valueAt = (arr,i) => arr[~~i];
