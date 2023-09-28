@@ -1,4 +1,3 @@
-
 //#####1.Problem######
 
 //  Return the First Element in an Array
@@ -18,7 +17,6 @@
 // 	return arr[0]
 // }
 // 2. const getFirstValue=arr=>arr[0]
-
 
 // ######### 2problem##########
 
@@ -40,8 +38,6 @@
 
 // 3. const makePair=(num1,num2)=> [...arguments]
 
-
-
 // ######3 problem############
 
 // Learn Lodash: _.drop, Drop the First Elements of an Array
@@ -58,7 +54,6 @@
 
 // drop([1, 2, 3], 0) ➞ [1, 2, 3]
 
-
 // solution
 // 1. function drop(arr, val = 1) {
 // 	return arr.slice(val)
@@ -68,8 +63,6 @@
 // 3.function drop(arr,val=1){
 //     return arr.filter((el,index)=>index>=val)
 // }
-
-
 
 // ###########4problem###########
 // Upvotes vs Downvotes
@@ -82,7 +75,6 @@
 
 // getVoteCount({ upvotes: 132, downvotes: 132 }) ➞ 0
 
-
 // solution
 // 1. function getVoteCount(votes) {
 // 	return votes.upvotes + votes.downvotes
@@ -90,7 +82,6 @@
 
 // 2. const getVoteCount=(votes)=>votes.upvotes + votes.downvotes
 // 3. const getVoteCount = ({ upvotes, downvotes }) => upvotes - downvotes;
-
 
 // ##########5 problem###########
 
@@ -116,7 +107,6 @@
 // 	return reversedArray
 // }
 
-
 // #############6 problem##################
 // Fix the Bug: Simple Array Manipulation
 // Help fix all the bugs in the function incrementItems! It is intended to add 1 to every element in the array!
@@ -127,7 +117,6 @@
 // incrementItems([2, 4, 6, 8]) ➞ [3, 5, 7, 9]
 
 // incrementItems([-1, -2, -3, -4]) ➞ [0, -1, -2, -3]
-
 
 // before
 // function incrementItems(arr) {
@@ -141,8 +130,6 @@
 // 		arr[i] = arr[i] + 1
 // 	return arr
 // }
-
-
 
 // ############7 problem############
 // ES6: Destructuring Arrays I
@@ -170,7 +157,6 @@
 
 // getLastItem([true, false, true]) ➞ true
 
-
 // solution
 // 1. function getLastItem(arr) {
 // 	return arr.pop()
@@ -178,7 +164,6 @@
 // 2. const getLastItem=arr=>arr.pop()
 // 3. const getLastItem=arr=>arr[arr.length-1]
 // 4. const getLastItem=arr=>arr.slice(-1)[0]
-
 
 // ############## 9 problem##################
 // Convert an Array to a String
@@ -202,7 +187,6 @@
 //      return result
 // }
 
-
 // ############10 problem###################
 // Concatenating Two Integer Arrays
 // Create a function to concatenate two integer arrays.
@@ -224,10 +208,9 @@
 // 4. function concat(arr1, arr2) {
 // 	for (item of arr2){
 // 		arr1.push(item)
-// 	}	
+// 	}
 // 	return arr1
 // }
-
 
 // ##################problem 11#################
 // Find the Index
@@ -260,7 +243,6 @@
 // }
 // }
 
-
 // ###########12 problem#################
 // Array Indexing
 // Given an index and an array, return the value of the array with the given index.
@@ -286,3 +268,15 @@
 //     return arr.filter((el,index)=>index==(Math.floor(i)))[0]
 //  }
 // 7. const valueAt = (arr,i) => arr[~~i];
+// 8. function valueAt(arr, i) {
+// 	return arr[Math.trunc(i)]
+// }
+// 9. const valueAt=(arr,i)=> arr[Math.trunc(i)]
+// 10. function valueAt(arr,i){
+//     return arr.find((el,index)=>index==(Math.trunc(i)))
+// }
+// 11. const valueAt=(arr,i)=>arr.find((el,index)=>index==(Math.trunc(i)))
+//  12. const valueAt= (arr,i)=>arr.filter((el,index)=>index==(Math.trunc(i)))[0]
+//  13. function valueAt(arr,i) {
+//     return arr.filter((el,index)=>index==(Math.trunc(i)))[0]
+//  }
