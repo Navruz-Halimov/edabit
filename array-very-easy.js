@@ -632,3 +632,21 @@
 // Change the string so that it will evaluate to head = 1 and tail = [2, 3, 4] 
 // Use the Rest element
 // const str = '[head, ...tail] = [1, 2, 3, 4]'
+
+
+// ######### 25 problem###########
+// Squares and Cubes
+// Create a function that takes an array of two numbers and checks if the square root of the first number is equal to the cube root of the second number.
+
+// Examples
+// checkSquareAndCube([4, 8]) ➞ true
+
+// checkSquareAndCube([16, 48]) ➞ false
+
+// checkSquareAndCube([9, 27]) ➞ true
+
+// solution
+// 1. function checkSquareAndCube(arr) {
+// 	return Math.sqrt(arr[0])===Math.cbrt(arr[1])
+// }
+// 2. function checkSquareAndCube = (arr)=>Math.sqrt(arr[0])===Math.cbrt(arr[1])
