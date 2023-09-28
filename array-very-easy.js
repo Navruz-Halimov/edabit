@@ -502,3 +502,33 @@
 // 	return arr1.includes(arr2[0]) && arr1.pop()===arr2[arr2.length-1]
 // }
 // 6. const hasSameBread=(arr1,arr2)=>arr1.includes(arr2[0]) && arr1.pop()===arr2[arr2.length-1]
+
+// ############# 20 problem #############
+// Convert All Array Items to String
+// Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
+
+// Examples
+// parseArray([1, 2, "a", "b"]) ➞ ["1", "2", "a", "b"]
+
+// parseArray(["abc", 123, "def", 456]) ➞ ["abc", "123", "def", "456"]
+
+// parseArray([1, 2, 3, 17, 24, 3, "a", "123b"]) ➞ ["1", "2", "3", "17", "24", "3", "a", "123b"]
+
+// parseArray([]) ➞ []
+
+// solution
+// 1. function parseArray(arr) {
+// 	return arr.map(el=>el.toString())
+// }
+// 2. const parseArray=arr=>arr.map(el=>el.toString())
+// 3. function parseArray(arr){
+//     let result=[]
+//     for(el of arr){
+//         result.push(el.toString())
+//     }
+// 	return result
+// }
+// 4. const parseArray = a => a.map(String)
+// 5. function parseArray(arr) {
+// 	return arr.map(m=>m+'')
+// }
