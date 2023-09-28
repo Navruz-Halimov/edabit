@@ -725,3 +725,28 @@
 //  return [n/2,n/4,n/8]	
 // }
 // 2. const halfQuarterEighth=n=>[n/2,n/4,n/8]
+
+
+// ########### 29 ####################
+// Multiply Every Array Item by Two
+// Create a function that takes an array with numbers and return an array with the elements multiplied by two.
+
+// Examples
+// getMultipliedArr([2, 5, 3]) ➞ [4, 10, 6]
+
+// getMultipliedArr([1, 86, -5]) ➞ [2, 172, -10]
+
+// getMultipliedArr([5, 382, 0]) ➞ [10, 764, 0]
+
+// solution
+// 1. function getMultipliedArr(arr) {
+// 	return arr.map(el=>el*2)
+// }
+// 2. const getMultipliedArr=arr=>arr.map(el=>el*2)
+// 3. function getMultipliedArr(arr){
+//     let result=[]
+//     for(let i=0; i<arr.length; i++){
+//         result.push(arr[i]*2)
+//     }
+//     return result
+// }
