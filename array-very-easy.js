@@ -563,3 +563,28 @@
 //     result.push(...arr1,...arr2)
 //     return result
 // }
+
+// ############## 22 problem#################
+// Array of Strings to Array of Numbers
+// Create a function that takes as a parameter an array of "stringified" numbers and returns an array of numbers.
+
+// Example:
+
+// ["1", "3", "3.6"] ➞ [1, 3, 3.6]
+// Examples
+// toNumberArray(["9.4", "4.2"]) ➞ [9.4, 4.2]
+
+// toNumberArray(["91", "44"]) ➞ [91, 44]
+
+// toNumberArray(["9.5", "8.8"]) ➞ [9.5, 8.8]
+
+// solution
+// 1. function toNumberArray(arr) {
+// 	return arr.map(el=>parseFloat(el))
+// }
+// 2. const toNumberArray = arr =>arr.map(el=>parseFloat(el))  
+// 3. const toNumberArray=arr=>arr.map(el=>+el)
+// 4. function toNumberArray(arr) {
+// 	return arr.map(Number)
+// }
+// 5.const toNumberArray = arr => arr.map(Number);
