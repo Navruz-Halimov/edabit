@@ -374,3 +374,37 @@
 // 	}
 // 	return -1;
 // }
+
+
+// ##################16 problem##############
+
+// Check if an Array Contains a Given Number
+// Write a function to check if an array contains a particular number.
+
+// Examples
+// check([1, 2, 3, 4, 5], 3) ➞ true
+
+// check([1, 1, 2, 1, 1], 3) ➞ false
+
+// check([5, 5, 5, 6], 5) ➞ true
+
+// check([], 5) ➞ false
+// solution
+// 1. function check(arr, el) {
+// 	return arr.includes(el)
+// }
+// 2. const check=(arr, el)=>arr.includes(el)
+// 3. function check(arr, el) {
+// 	return arr.indexOf(el)>=0?true:false
+// }
+// 4.function check(arr, el) {
+// 	for (var i = 0; i < arr.length; i++){
+// 		if (arr[i] === el){
+// 			return true;
+// 		}
+// 	}
+// 	return false;
+// }
+// 5.function check(arr, el) {
+// 	return arr.indexOf(el) > -1;
+// }
