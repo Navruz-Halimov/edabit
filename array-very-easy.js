@@ -325,7 +325,7 @@
 // sumArray([-1, 0, 1]) ➞ 0
 
 // sumArray([0, 4, 8, 12]) ➞ 24
-
+// given
 // function sumArray(arr) {
 // 	sum ,	
 //   for (i=0, i<arr, i++) {
@@ -336,10 +336,41 @@
 
 
 // solution
-function sumArray(arr) {
-	let sum=0;
-  for (let i=0; i<arr.length; i++) {
-	  sum+=arr[i]
-	}
-  return sum
-}
+// function sumArray(arr) {
+// 	let sum=0;
+//   for (let i=0; i<arr.length; i++) {
+// 	  sum+=arr[i]
+// 	}
+//   return sum
+// }
+
+// ############ 15problem############
+// Find the Index (Part #2)
+// Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
+
+// Examples
+// search([1, 2, 3, 4], 3) ➞ 2
+
+// search([2, 4, 6, 8, 10], 8) ➞ 3
+
+// search([1, 3, 5, 7, 9], 11) ➞ -1
+
+// solution
+// 1. function search(arr, item) {
+// 	return arr.indexOf(item)
+// }
+// 2. const search=(arr,item)=>arr.indexOf(item)
+// 3. function search(arr,item) {
+//     return arr.findIndex(el=>el==item)
+// }
+// 4. const search=(arr,item)=>arr.findIndex(el=>el==item)
+// 5. function search(arr,item) {
+//     return arr.findLastIndex(el=>el==item)
+// }
+// 6. const search=(arr,item)=>arr.findLastIndex(el=>el==item)
+// 7. function search(arr, item) {
+// 	for(var i = 0;i<arr.length;i++){
+// 		if(arr[i] == item) return i;
+// 	}
+// 	return -1;
+// }
