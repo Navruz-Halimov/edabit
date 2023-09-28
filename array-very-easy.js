@@ -588,3 +588,31 @@
 // 	return arr.map(Number)
 // }
 // 5.const toNumberArray = arr => arr.map(Number);
+
+
+// #################### 23 problem####################
+// Return Types
+// Create a function that takes an array and returns the types of values (data types) in a new array.
+
+// Examples
+// arrayValuesTypes([1, 2, "null", []])
+// ➞ ["number", "number", "string", "object"]
+
+// arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
+// ➞ ["string", "boolean", "boolean", "number", "number", "object", "object"]
+
+// arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
+// ➞ ["number", "string", "string", "object", "object", "boolean", "number"]
+
+// solution
+// 1. function arrayValuesTypes(arr) {
+// 	return arr.map(el=>typeof(el))
+// }
+// 2. const arrayValuesTypes=arr=>arr.map(el=>typeof(el))
+// 3. function arrayValuesTypes(arr){
+//     let result=[]
+//     arr.forEach(element => {
+//         result.push(typeof(element))
+//     });
+//     return result
+// }
