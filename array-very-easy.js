@@ -650,3 +650,30 @@
 // 	return Math.sqrt(arr[0])===Math.cbrt(arr[1])
 // }
 // 2. function checkSquareAndCube = (arr)=>Math.sqrt(arr[0])===Math.cbrt(arr[1])
+
+
+// ############ 26 problem########################
+// Burglary Series (14): Adjectives Total
+// You call your spouse in anger and a "little" argument takes place. Count the total amount of insults used. Given an object of insults, return the total amount of insults used.
+
+// Examples
+// totalAmountAdjectives({ a: "moron" }) ➞ 1
+
+// totalAmountAdjectives({ a: "idiot", b: "idiot", c: "idiot" }) ➞ 3
+
+// totalAmountAdjectives({ a: "moron", b: "scumbag", c: "moron", d: "dirtbag" }) ➞ 4
+
+// solution
+// 1. function totalAmountAdjectives(obj) {
+// 	return Object.keys(obj).length
+// }
+// 2. const totalAmountAdjectives=obj=>Object.keys(obj).length
+// 3. function totalAmountAdjectives(obj) {
+// 	return Object.values(obj).length
+// }
+// 4. const totalAmountAdjectives=obj=>Object.values(obj).length
+
+// 5. function totalAmountAdjectives(obj) {
+// 	return Object.entries(obj).length
+// }
+// 6. const totalAmountAdjectives=obj=>Object.entries(obj).length
