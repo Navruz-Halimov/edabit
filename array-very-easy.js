@@ -750,3 +750,37 @@
 //     }
 //     return result
 // }
+
+
+
+// ############### 30 problem################
+// Array of Word Lengths
+// Create a function that takes an array of words and transforms it into an array of each word's length.
+
+// Examples
+// wordLengths(["hello", "world"]) ➞ [5, 5]
+
+// wordLengths(["Halloween", "Thanksgiving", "Christmas"]) ➞ [9, 12, 9]
+
+// wordLengths(["She", "sells", "seashells", "down", "by", "the", "seashore"])
+
+// solution
+// 1. function wordLengths(arr) {
+// 	return arr.map(el=>el.length)
+// }
+// 2. const wordLengths = arr => arr.map(el=>el.length)
+// 3. function wordLengths(arr){
+//     let result = []
+//     for(item of arr){
+//         result.push(item.length)
+//     }
+// 	return result
+// }
+// 4. function wordLengths(arr){
+//     let result = []
+//     arr.forEach(element => {
+//         result.push(element.length)
+//     });
+//     return result
+// }
+
