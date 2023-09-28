@@ -677,3 +677,34 @@
 // 	return Object.entries(obj).length
 // }
 // 6. const totalAmountAdjectives=obj=>Object.entries(obj).length
+
+
+
+//############### 27 ####################
+// Recreating the String.length Property
+// Create a function which returns the length of a string, WITHOUT using String.length property.
+
+// Examples
+// length("Hello World") ➞ 11
+
+// length("Edabit") ➞ 6
+
+// length("wash your hands!") ➞ 16
+
+// solution
+//1. function length(s) {
+// 	return s.length
+// }
+// 2. const length=(s)=>s.length
+// 3. const length=(s)=>s.lastIndexOf('')
+// 4. function length(s) {
+// 	return s.lastIndexOf('');
+// }
+// 5. function length(s) {
+// 	let count = 0;
+//   	for(let c of s){
+// 		count++;
+// 	}
+//   	return count;
+// }
+// 6. const length = s => [...s].reduce(a => a+1, 0);
