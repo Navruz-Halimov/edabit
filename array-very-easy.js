@@ -408,3 +408,10 @@
 // 5.function check(arr, el) {
 // 	return arr.indexOf(el) > -1;
 // }
+// 6. function check(arr,el) {
+//     return arr.some(el=>el)
+// }
+// 7. function check(arr, el) {
+// 	return arr.some(element=>element==el)
+// }
+// 8. const check=(arr, el)=>arr.some(element=>element==el)
