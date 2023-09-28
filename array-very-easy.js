@@ -460,7 +460,7 @@
 // fiftyThirtyTwenty(13450) ➞ { "Needs": 6725, "Wants": 4035, "Savings": 2690 }
 
 // #solution
-1. function fiftyThirtyTwenty(ati) {
-	return { "Needs": ati*0.5, "Wants": ati*0.3, "Savings": ati*0.2 }
-}
-2. const fiftyThirtyTwenty = a => a = {Needs:a/2, Wants:a*.3, Savings:a*.2};
+// 1. function fiftyThirtyTwenty(ati) {
+// 	return { "Needs": ati*0.5, "Wants": ati*0.3, "Savings": ati*0.2 }
+// }
+// 2. const fiftyThirtyTwenty = a => a = {Needs:a/2, Wants:a*.3, Savings:a*.2};
