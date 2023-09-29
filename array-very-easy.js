@@ -979,3 +979,43 @@
 // 6. function invertArray(arr){
 //     return arr.map(x=>x?-x:0)
 //   }
+
+
+
+// #################37 problem######################
+// Sum Greater Than Five
+// Write a function that returns the sum of elements greater than 5, in the given array .
+
+// Examples
+// sumFive([1, 5, 20, 30, 4, 9, 18]) ➞ 77
+
+// sumFive([1, 2, 3, 4]) ➞ 0
+
+// sumFive([10, 12, 28, 47, 55, 100]) ➞ 252
+
+// solution
+// 1. function sumFive(arr) {
+// 	return arr.filter(el=>el>5).reduce((el,acc)=>el+acc,0)
+// }
+// 2. const sumFive=arr=>arr.filter(el=>el>5).reduce((el,acc)=>el+acc,0)
+// 3. function sumFive(arr){
+//     let sum=0;
+//     for(el of arr){
+//         if(el>5){
+//             sum+=el
+//         }
+//     }
+//     return sum
+// }
+// 4. function sumFive(arr){
+//     let sum=0;
+//     arr.forEach(element => {
+//         sum+=element
+//     });
+//     return sum
+// }
+// 5. function sumFive(arr){return arr.filter(el=>el>5).reduceRight((el,acc)=>el+acc,0)}
+// 6. function sumFive(arr){return eval(arr.filter(el=>el>5).join(`+`))}
+// 7. function sumFive(arr) {
+// 	return arr.reduce((a, b) => b > 5 ? a + b : a, 0);
+// }
