@@ -920,3 +920,35 @@
 // }
 // 4. const rotateByOne = arr => [arr[arr.length - 1]].concat(arr.slice(0, -1));
 // 5. const rotateByOne = a=>(a.unshift(a.pop()),a)
+
+
+
+// ######################## 35 problem######################
+// Get the File Name
+// Create a function that returns the selected filename from a path. Include the extension in your answer.
+
+// Examples
+// getFilename("C:/Projects/pil_tests/ascii/edabit.txt") ➞ "edabit.txt"
+
+// getFilename("C:/Users/johnsmith/Music/Beethoven_5.mp3") ➞ "Beethoven_5.mp3"
+
+// getFilename("ffprobe.exe") ➞ "ffprobe.exe"
+
+
+
+// /solution
+// 1. function getFilename(path) {
+// 	let lastEl=path.split('/')
+// 	return lastEl[lastEl.length-1]
+// }
+// 2. const getFilename=path=>path.split('/').pop()
+// 3. function getFilename(path){
+//     return path.split('/').pop()
+// }
+// 4. const getFilename = p => p.split('/').slice(-1)[0]
+// 5. function getFilename(path){
+// 	return path.match(/[^/]+$/)[0]
+// }
+// 6. function getFilename(path){
+// 	return path.split('/').reverse()[0]	
+// }
