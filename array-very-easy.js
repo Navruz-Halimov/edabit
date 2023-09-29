@@ -815,3 +815,42 @@
 // 	const [[a, b, c], [d, e, f]] = [cube1, cube2];
 // 	return Math.abs(a*b*c - d*e*f);
 // }
+// 6. const reducer = x => x.reduce((a, c) => a * c);
+
+// function findDifference(a, b) {
+//   return Math.abs(reducer(a) - reducer(b));
+// }
+
+
+// ############### 32 problem##############
+// Spaces Between Each Character
+// Create a function that takes a string and returns a string with spaces in between all of the characters.
+
+// Examples
+// spaceMeOut("space") ➞ "s p a c e"
+
+// spaceMeOut("far out") ➞ "f a r   o u t"
+
+// spaceMeOut("elongated musk") ➞ "e l o n g a t e d   m u s k"
+
+
+// solution
+
+// 1. function spaceMeOut(str) {
+// 	return str.split('').join(' ')
+// }
+// 2. const spaceMeOut=str=>str.split('').join(' ')
+// 3. function spaceMeOut(str) {
+// 	return str.split('').map(el=>el+' ').join('').trim()
+// }
+// 4. const spaceMeOut=str=>str.split('').map(el=>el+' ').join('').trim()
+// 5. const spaceMeOut = str => [...str].join(' ')
+// 6. const spaceMeOut = s => [...s].join` `
+// 7. function spaceMeOut(str) {
+// 	var arr = Array.from(str).join(' ');
+// 	return arr;
+// }
+// 8. function spaceMeOut(str) {
+// 	return [...str].join(' ')
+// }
+// 9. const spaceMeOut=str=>Array.from(str).join(' ')
