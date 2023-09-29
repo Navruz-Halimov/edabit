@@ -854,3 +854,40 @@
 // 	return [...str].join(' ')
 // }
 // 9. const spaceMeOut=str=>Array.from(str).join(' ')
+
+
+// ############# 33 problem##################
+// Get the Sum of All Array Elements
+// Create a function that takes an array and returns the sum of all numbers in the array.
+
+// Examples
+// getSumOfItems([2, 7, 4]) ➞ 13
+
+// getSumOfItems([45, 3, 0]) ➞ 48
+
+// getSumOfItems([-2, 84, 23]) ➞ 105
+// solution
+// 1. function getSumOfItems(arr) {
+// 	return arr.reduce((el,acc)=>el+acc,0)
+// }
+// 2. const getSumOfItems=arr=>arr.reduce((el,acc)=>el+acc,0)
+// 3. function getSumOfItems(arr){
+//     let sum=0;
+//     arr.forEach(element => {
+//         sum+=element
+//     });
+//     return sum;
+// }
+// 4. function getSumOfItems(arr){
+//     let sum=0
+//       arr.map(el=>sum+=el)
+//       return sum
+// }
+// 5. function getSumOfItems(arr){
+//     let sum=0;
+//     for(let i=0; i<arr.length; i++){
+//         sum+=arr[i]
+//     }
+//     return sum
+// }
+// 6. const getSumOfItems = arr => eval(arr.join`+`)
