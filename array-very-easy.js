@@ -952,3 +952,30 @@
 // 6. function getFilename(path){
 // 	return path.split('/').reverse()[0]	
 // }
+
+
+
+// ################################ 36 #######################
+// Invert an Array
+// Create a function that takes an array of numbers arr and returns an inverted array.
+
+// Examples
+// invertArray([1, 2, 3, 4, 5]) ➞ [-1, -2, -3, -4, -5]
+
+// invertArray([1, -2, 3, -4, 5]) ➞ [-1, 2, -3, 4, -5]
+
+// invertArray([]) ➞ []
+
+// solution
+// 1. function invertArray(arr) {
+// 	return arr.map(el=>el!=0?(-1)*el:el)
+// }
+// 2. const invertArray=arr=>arr.map(el=>el!=0?(-1)*el:el)
+// 3. function invertArray(arr) {
+// 	return arr.map(el=>el!=0?-el:el)
+// }
+// 4. const invertArray=arr=>arr.map(el=>el!=0?-el:el)
+// 5. let invertArray = a => a.map(b => -b || 0);  
+// 6. function invertArray(arr){
+//     return arr.map(x=>x?-x:0)
+//   }
