@@ -1089,3 +1089,43 @@
 //     return result
 // }
 // 2. const rangeOfNum = (start, end) => Array.from({length: end - (start + 1)}, (_, i) => ++i + start)
+
+
+// ################# 40 problem ##################
+
+// Skip the Drinks with Too Much Sugar
+// Write a function that takes an array of drinks and returns an array of only drinks with no sugar in them. Drinks that contain sugar (in this challenge) are:
+
+// cola
+// fanta
+// Examples
+// skipTooMuchSugarDrinks(["fanta", "cola", "water"]) ➞ ["water"]
+
+// skipTooMuchSugarDrinks(["fanta", "cola"]) ➞ []
+
+// skipTooMuchSugarDrinks(["lemonade", "beer", "water"]) ➞ ["lemonade", "beer", "wate
+
+
+// solution
+// 1. function skipTooMuchSugarDrinks(drinks) {
+// 	return drinks.filter(el=>!(el=='cola'||el=='fanta'))
+// }
+// 2. const skipTooMuchSugarDrinks=drinks=>drinks.filter(el=>!(el=='cola'||el=='fanta'))
+// 3. function skipTooMuchSugarDrinks(drinks){
+//     let result=[]
+//     for(el of drinks){
+//         if(!(el=='cola'||el=='fanta')){
+//             result.push(el)
+//         }
+//     }
+//     return result
+// }
+
+
+// 4. function skipTooMuchSugarDrinks(drinks) {
+// 	return drinks.filter(d => !['cola', 'fanta'].includes(d))
+// }
+
+// 5. function skipTooMuchSugarDrinks(drinks) {
+// 	return drinks.filter(x => !/fanta|cola/.test(x))
+// }
