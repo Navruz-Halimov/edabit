@@ -1019,3 +1019,45 @@
 // 7. function sumFive(arr) {
 // 	return arr.reduce((a, b) => b > 5 ? a + b : a, 0);
 // }
+
+
+// ############## 38 problem##########################
+// Even or Odd?
+// Given an array of integers, determine whether the sum of its elements is even or odd.
+
+// The return value should be a string ("odd" or "even").
+
+// If the input array is empty, consider it as an array with a zero ([0]).
+
+// Examples
+// evenOrOdd([0]) ➞ "even"
+
+// evenOrOdd([1]) ➞ "odd"
+
+// evenOrOdd([]) ➞ "even"
+
+// evenOrOdd([0, 1, 5]) ➞ "even"
+
+// solution
+
+// 1. function evenOrOdd(arr) {
+// 	return arr.reduce((el,acc)=>(el+acc),0)%2===0?'even':'odd'
+// }
+// 2. const evenOrOdd = arr =>
+// arr.reduce((acc, cur) => acc + cur, 0) % 2 !== 0 ? 'odd' : 'even';
+// 3. function evenOrOdd(arr) {
+// 	const sum = arr.reduce((a, b) => a + b, 0);
+// 	if( sum % 2 == 0 ){
+// 		return "even"
+// 	}
+// 	else {
+// 		return "odd"
+// 	}
+// }
+// 4. function evenOrOdd(arr){
+//     let sum=0;
+//     arr.forEach(element => {
+//         sum+=element
+//     });
+//     return sum%2==0?'even':'odd'
+// }
