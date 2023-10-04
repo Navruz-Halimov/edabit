@@ -1163,3 +1163,28 @@
 //     });
 //     return result
 // }
+
+
+// ##################### 42 problem####################
+
+// Filter Strings from Array
+// Create a function that takes an array of strings and numbers, and filters out the array so that it returns an array of integers only.
+
+// Examples
+// filterArray([1, 2, 3, "a", "b", 4]) ➞ [1, 2, 3, 4]
+
+// filterArray(["A", 0, "Edabit", 1729, "Python", "1729"]) ➞ [0, 1729]
+
+// filterArray(["Nothing", "here"]) ➞ []
+
+// solution
+
+// 1. function filterArray(arr) {
+// 	return arr.filter(el=>el%1==0 && typeof el=='number')
+// }
+// 2. const filterArray=arr=>arr.filter(el=>el%1==0 && typeof el=='number')
+// 3. function filterArray(arr){
+// 	return arr.filter(el => Number.isInteger(el));
+// }
+// 4. let filterArray = a => a.filter(x=> x % 1 == 0);
+// 5. filterArray=a=>a.filter(e=>~~e==e)
