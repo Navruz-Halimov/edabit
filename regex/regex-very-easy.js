@@ -30,3 +30,27 @@
 // 	return a === 'n' ? true : false;
 // }
 // 7. const isLastCharacterN = word => /n$/.test(word)
+
+
+
+// ######################## problem 2###############################
+// Count the Syllables
+// Create a function that returns the number of syllables in a simple string. The string is made up of short repeated words like "Lalalalalalala" (which would have 7 syllables).
+
+// Examples
+// countSyllables("Hehehehehehe") ➞ 6
+
+// countSyllables("bobobobobobobobo") ➞ 8
+
+// countSyllables("NANANA") ➞ 3
+
+// solution
+// 1. function countSyllables(str) {
+// 	return str.length/2
+// }
+// 2. const countSyllables = str=>str.length/2
+// 3. function countSyllables(str) {
+// 	return [...str].length/2
+// }
+// 4. const countSyllables = s =>s.match(/.{1,2}/g).length;
+// 5. const countSyllables = str => str.match(/[aeiou]/gi).length
