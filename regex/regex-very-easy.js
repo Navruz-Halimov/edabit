@@ -219,3 +219,33 @@
 //    return str.split('').filter(el=>el.includes('C')).length
 // }
 // 11. const countClaps=str=>str.split('').filter(el=>el.includes('C')).length
+
+
+
+// ############# problem 7 #######################
+// Get the File Name
+// Create a function that returns the selected filename from a path. Include the extension in your answer.
+
+// Examples
+// getFilename("C:/Projects/pil_tests/ascii/edabit.txt") ➞ "edabit.txt"
+
+// getFilename("C:/Users/johnsmith/Music/Beethoven_5.mp3") ➞ "Beethoven_5.mp3"
+
+// getFilename("ffprobe.exe") ➞ "ffprobe.exe"
+
+// solution
+// 1. function getFilename(path) {
+// 	let splited=path.split('/')
+// 	return splited[splited.length-1]
+// }
+// 2. function getFilename(path){
+//     return path.split('/').pop()
+// }
+// 3. function getFilename(path){
+// 	return path.match(/[^/]+$/)[0]
+// }
+// 4. const getFilename=path=>path.match(/[^/]+$/)[0]
+// 5. const getFilename = p => p.split('/').slice(-1)[0]
+// 6. function getFilename(path) {
+// 	return path.match(/[^/]\w+\.\w+$/g).join('')
+// }
