@@ -102,3 +102,56 @@
 // 	let methodTwo = /hello/.test("hello") // returns a boolean
 // 	return methodOne && methodTwo
 // }
+
+
+
+// ################## problem 5 ######################
+// How Many D's Are There?
+// Create a function that counts how many D's are in a sentence.
+
+// Examples
+// countDs("My friend Dylan got distracted in school.") ➞ 4
+
+// countDs("Debris was scattered all over the yard.") ➞ 3
+
+// countDs("The rodents hibernated in their den.") ➞ 3
+// Notes
+// Your function must be case-insensitive.
+// Remember to return the result.
+// Check the Resources for help.
+
+// solution
+// 1. function countDs(sentence) {
+// 	return sentence.match(/d/gi).length
+// }
+// 2. const countDs=sentence=>sentence.match(/d/gi).length
+// 3 function countDs(sentence){
+//     return  [...sentence].filter(el=>el=='d'|| el=='D').length
+//   }
+
+//   4. const countDs=sentence=>[...sentence].filter(el=>el=='d'|| el=='D').length
+// 5. function countDs(sentence){
+    //     return  [...sentence].map(el=>el=='d'|| el=='D').length
+    //   }
+
+// 6.   4. const countDs=sentence=>[...sentence].map(el=>el=='d'|| el=='D').length
+
+// 7. function countDs(sentence){
+//     const regex=new RegExp('d','gi')
+//     return sentence.match(regex).length
+// }
+// 8. function countDs(sentence) {
+// 	arr = sentence.toLowerCase().split('').filter(x => x == 'd');
+// 	return arr.length;
+// }
+// 9. function countDs(sentence) {
+// 	var num = 0
+// 	for (let i = 0; i < sentence.length; i++) {
+// 		if (sentence[i] === "d" || sentence[i] === "D") {
+// 			num++
+// 		}
+// 	}
+// 	return num
+// }
+
+
