@@ -170,3 +170,52 @@
 // Notes
 // Check the Resources tab for details on character classes if you're stuck.
 // const REGEXP = /\D */g
+
+
+// ###############problem 6 ################
+// Raucous Applause
+// After an amazing performance, the crowd goes wild! People clap enthusiastically and most claps overlap with each other to create one homogeneous sound.
+
+// An overlapped clap is a clap which starts but doesn't finish, as in "ClaClap" (The first clap is cut short and there are overall 2 claps)
+
+// Given a string of what the overlapping claps sounded like, return how many claps were made in total.
+
+// Examples
+// countClaps("ClaClaClaClap!") ➞ 4
+
+// countClaps("ClClClaClaClaClap!") ➞ 6
+
+// countClaps("CCClaClClap!Clap!ClClClap!") ➞ 9
+
+// solution
+// 1. function countClaps(str) {
+// 	return str.match(/C/gi).length
+// }
+
+// 2. const countClaps=str=>str.match(/C/gi).length
+
+// 3. function countClaps(str){
+//     return [...str].filter(element=>element=='C'|| element=='c').length
+// }
+//  4. const countClaps=str=>[...str].filter(element=>element=='C'|| element=='c').length
+ 
+//  5. function countClaps(txt) {
+// 	return txt.split("C").length-1
+// }
+// 6. const countClaps=str=>txt.split("C").length-1
+// 7. function countClaps(str){
+//     return str.split('').filter(element=>element=='C'|| element=='c').length
+// }
+// 8. const countClaps=str=>str.split('').filter(element=>element=='C'|| element=='c').length
+// 9. function countClaps(str) {
+//     let countOfClaps = 0
+//     for (let i = 0; i < str.length; i++) {
+//         if (str.charAt(i) === 'C')
+//             countOfClaps++
+//     }
+//     return countOfClaps
+// }
+// 10. function countClaps(str){
+//    return str.split('').filter(el=>el.includes('C')).length
+// }
+// 11. const countClaps=str=>str.split('').filter(el=>el.includes('C')).length
