@@ -249,3 +249,9 @@
 // 6. function getFilename(path) {
 // 	return path.match(/[^/]\w+\.\w+$/g).join('')
 // }
+// 7. function getFilename(path){
+// 	return path.split('/').reverse()[0]
+// }
+// 8. function getFilename(path) {
+// 	return path.match(/\w+.\w+$/gi)[0]
+// }
