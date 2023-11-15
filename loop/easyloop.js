@@ -62,3 +62,38 @@
 // 	return (n*30*12) + p
 // }
 // 4. const futurePeople = (p,n) => p + (n * 30 * 12)
+
+
+// ######problem 3##################
+// To the Power of _____
+// Create a function that takes a base number and an exponent number and returns the calculation.
+
+// Examples
+// calculateExponent(5, 5) ➞ 3125
+
+// calculateExponent(10, 10) ➞ 10000000000
+
+// calculateExponent(3, 3) ➞ 27
+// Notes
+// All test inputs will be positive integers
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+
+
+// solution
+// 1. function calculateExponent(num, exp) {
+// return Math.pow(num,exp)	
+// }
+// 2. const calculateExponent=(num,exp)=>Math.pow(num,exp)
+// 3. function calculateExponent(num,exp){
+//     let result=1
+//     for(let i=0; i<exp;i++){
+//         result*=num
+//     }
+//     return result
+// }
+// 4. function calculateExponent(num, exp) {
+// 	return num ** exp
+// }
