@@ -235,3 +235,36 @@
 //   return typeArr;
 	
 // }
+
+
+// ########################## 7##################################
+// Recreating the String.length Property
+// Create a function which returns the length of a string, WITHOUT using String.length property.
+
+// Examples
+// length("Hello World") ➞ 11
+
+// length("Edabit") ➞ 6
+
+// length("wash your hands!") ➞ 16
+// Notes
+// N/A
+
+// solution
+// 1. function length(s) {
+// 	let result = 0
+// 	let m = s.split('').forEach((el,index)=>result=index+1)
+// 	return result
+// }
+// 2. function length(s) {
+// 	return s.lastIndexOf('');
+// }
+// 3. function length(s) {
+// 	let count = 0;
+//   	for(let c of s){
+// 		count++;
+// 	}
+//   	return count;
+// }
+// 4. const length = s => [...s].reduce(a => a+1, 0)
+// 5. const length = s => s.lastIndexOf('')
