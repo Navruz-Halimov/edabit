@@ -140,3 +140,98 @@
 // 	}
 // 	return indexEl
 // }
+
+
+// problem %%%%%%%%%%%%%%%%%%% 5 %%%%%%%%%%%%%%%%%%%%%%%%%
+// Find the Index (Part 1)
+// Create a function that finds the index of a given item.
+
+// Examples
+// search([1, 5, 3], 5) ➞ 1
+
+// search([9, 8, 3], 3) ➞ 2
+
+// search([1, 2, 3], 4) ➞ -1
+// Notes
+// If the item is not present, return -1.
+
+// 1. function search(arr, item) {
+// 	return arr.indexOf(item)
+// }
+// 2. const search = (arr,item)=>arr.indexOf(item)
+
+// 3. 
+// function search (arr,item){
+//     return arr.map((element,index)=>{
+//         if(element==item){
+//             return index
+//         }
+//         else{
+//             return -1
+//         }
+//     })
+// }
+
+
+// 4.
+// function search(arr, item) {
+// 	for(var i = 0;i<arr.length;i++){
+// 		if(arr[i] == item) return i;
+// 	}
+// 	return -1;
+// }
+
+
+// 5.
+// function search(arr, item) {
+// 	return arr.findIndex(arItem=>arItem==item);
+// }
+
+
+
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$ 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Return Types
+// Create a function that takes an array and returns the types of values (data types) in a new array.
+
+// Examples
+// arrayValuesTypes([1, 2, "null", []])
+// ➞ ["number", "number", "string", "object"]
+
+// arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
+// ➞ ["string", "boolean", "boolean", "number", "number", "object", "object"]
+
+// arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
+// ➞ ["number", "string", "string", "object", "object", "boolean", "number"]
+// Notes
+// Check the Resources tab for help if needed.
+// Remember Arrays & Null in JS are treated as object, hence the examples
+
+// solution
+// 1. function arrayValuesTypes(arr) {
+// 	return arr.map(el=>typeof(el))
+// }
+
+// 2. const arrayValuesTypes = a => a.map(x => typeof x)
+
+// 3. function arrayValuesTypes(arr) {
+// 	let newArray = [];
+// 	for(let i=0; i<arr.length; i++){
+// 		newArray.push(typeof arr[i]);
+// 	}
+// 	return newArray;
+// }
+// 4.
+// function arrayValuesTypes(arr) {
+	
+// 	const typeArr = [];
+  
+//   arr.forEach(function(element){
+    
+//     typeArr.push(typeof(element));
+    
+//   });
+  
+//   return typeArr;
+	
+// }
