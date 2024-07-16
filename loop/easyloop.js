@@ -268,3 +268,39 @@
 // }
 // 4. const length = s => [...s].reduce(a => a+1, 0)
 // 5. const length = s => s.lastIndexOf('')
+
+
+
+// #################### 8 #############################
+// Get the Sum of All Array Elements
+// Create a function that takes an array and returns the sum of all numbers in the array.
+
+// Examples
+// getSumOfItems([2, 7, 4]) ➞ 13
+
+// getSumOfItems([45, 3, 0]) ➞ 48
+
+// getSumOfItems([-2, 84, 23]) ➞ 105
+// Notes
+// N/A
+
+// solution
+// 1. function getSumOfItems(arr) {
+// 	return arr.reduce((acc,el)=>acc+el,0)
+// }
+// 2. const getSumOfItems = arr =>arr.reduce((acc,el)=>acc+el,0)
+// 3. function getSumOfItems(arr) {
+// 	let sum = 0
+// 	for (let i = 0; i < arr.length; i ++) {
+// 		sum += arr[i]
+// 	}
+// 	return sum
+// }
+// 4. const getSumOfItems = A => eval(A.join`+`)
+// 5. function getSumOfItems(arr) {
+// 	let sum = 0
+// 	for (i in arr){
+// 		sum += arr[i]
+// 	}
+// 	return sum
+// }
